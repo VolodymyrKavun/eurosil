@@ -7,13 +7,13 @@ export const navlinks = [
   },
   {
     id: v4(),
-    title: "Про мене",
-    href: "/#about",
+    title: "Про нас",
+    href: "/about",
   },
   {
     id: v4(),
-    title: "Каталог",
-    href: "/catalogue",
+    title: "Сфери використання",
+    href: "/areas",
   },
   {
     id: v4(),

@@ -11,22 +11,22 @@ const Footer = () => {
             <svg>
               <use href="./sprite.svg#icon-phonemini"></use>
             </svg>
-            +380-97-398-80-08
+            +380-63-627-07-73
           </a>
           <a
-            href="mailto:mstrmebliv@gmail.com"
+            href="mailto:biosil.inbox@gmail.com"
             className={`${styles.contact} `}
           >
             <svg>
               <use href="./sprite.svg#icon-mail"></use>
             </svg>
-            mstrmebliv@gmail.com
+            biosil.inbox@gmail.com
           </a>
           <p className={`${styles.contact} `}>
             <svg>
               <use href="./sprite.svg#icon-location"></use>
             </svg>
-            Новомосковськ, Дніпро
+            Київ, Україна
           </p>
         </address>
 

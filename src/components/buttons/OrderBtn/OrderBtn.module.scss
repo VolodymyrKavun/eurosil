@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 432px;
   height: 42px;
-  background-color: $primary900;
+  background-color: $secondary300;
   outline: none;
   border: none;
   border-radius: 16px;
@@ -12,6 +12,7 @@
   font-family: var(--font-raleway);
   font-weight: 300;
   font-size: 16px;
+  border: 2px solid $secondary10;
 
   @media screen and (min-width: $laptop) {
     width: 306px;
