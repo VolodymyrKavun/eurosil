@@ -15,7 +15,7 @@ const CatalogueList = () => {
   return (
     <>
         <ul className={styles.catalogueList}>
-          {!isLoading &&
+          {
             areas?.map(({ title, category, image }) => (
               <li key={title}>
                 <Link
