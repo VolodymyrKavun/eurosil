@@ -18,7 +18,7 @@ const Logo = ( className ) => {
           setHash("/");
         }}
       >
-        МайстерМеблів
+        Eurosil
       </Link>
     </>
   );

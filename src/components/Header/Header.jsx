@@ -70,8 +70,8 @@ const Header = () => {
       <div className={`container ${styles.container}`}>
         {!isDesktop && <BurgerBtn />}
         {(!isMobile || !isTablet) && (
-          <a href="tel:+380973988008" className={`${styles.tell} hoverLink`}>
-            +380-97-398-80-08
+          <a href="tel:+380636270773" className={`${styles.tell} hoverLink`}>
+            +380-63-627-07-73
           </a>
         )}
 
