@@ -13,7 +13,7 @@ export const navlinks = [
   {
     id: v4(),
     title: "Сфери використання",
-    href: "/areas",
+    href: "/catalogue",
   },
   {
     id: v4(),
