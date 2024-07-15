@@ -1,0 +1,86 @@
+@import "../../app/variables";
+
+.container {
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: $tablet) {
+    flex-direction: row-reverse;
+    gap: 20px;
+
+    &:nth-child(2n + 1) {
+      flex-direction: row;
+    }
+  }
+  @media screen and (min-width: $laptop) {
+    gap: 24px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+.figure {
+  width: 100%;
+  aspect-ratio: 470/354;
+  position: relative;
+  overflow: hidden;
+
+  & img {
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 425px) {
+    aspect-ratio: 2/1;
+  }
+  @media screen and (min-width: $tablet) {
+    aspect-ratio: 7/4;
+    flex: 1;
+  }
+  @media screen and (min-width: $laptop) {
+    flex: 1.4;
+  }
+}
+.contentWrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    flex: 1;
+  }
+}
+
+.title {
+  font-size: 20px;
+  @media screen and (min-width: $laptop) {
+    font-size: 32px;
+  }
+}
+
+.text {
+  font-size: 16px;
+  @media screen and (min-width: $laptop) {
+    font-size: 20px;
+  }
+}
+
+#link {
+  margin-top: auto;
+  @media screen and (min-width: $laptop) {
+    height: 48px;
+  }
+}

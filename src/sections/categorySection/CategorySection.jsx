@@ -16,7 +16,7 @@ import { areas } from "@/data/areas";
 
 const CategorySection = () => {
   const { data, isLoading, error } = GetDataWithPathname();
-  console.log("🚀 ~ CategorySection ~ data:", data)
+  console.log("🚀 ~ CategorySection ~ data:", data);
   const { setModalOpen } = useContext(SiteContext);
   const [index, setIndex] = useState(-1);
 
@@ -26,48 +26,48 @@ const CategorySection = () => {
 
   return (
     <>
-        <section className={styles.section}>
-          <div className={`container ${styles.container} `}>
-            <Link href="/catalogue" className={styles.linkBack}>
-              <svg className={styles.icon}>
-                <use href="/sprite.svg#arrow-left"></use>
-              </svg>
-              Назад
-            </Link>
-            <h1 className={styles.title}>
-              <span>{areas.title}</span>
-            </h1>
+      <section className={styles.section}>
+        <div className={`container ${styles.container} `}>
+          <Link href="/catalogue" className={styles.linkBack}>
+            <svg className={styles.icon}>
+              <use href="/sprite.svg#arrow-left"></use>
+            </svg>
+            Назад
+          </Link>
+          <h1 className={styles.title}>
+            <span>{areas.title}</span>
+          </h1>
 
-            <div className={styles.innerWrap}>
-              <div className={styles.imgBox} onClick={() => setIndex(0)}>
-                <Image
-                  src={areas.image}
-                  alt="фото сайту"
-                  fill={true}
-                  priority={true}
-                  className={styles.img}
-                  sizes="(max-width: 768px) 100vw,  50vw"
-                />
-              </div>
-              <div className={styles.descriptionBox}>
-                <h2 className={styles.subTitle}>{areas.subTitle}</h2>
-                <div className={styles.description}>{areas.description}</div>
-
-                <OrderBtn
-                  type="button"
-                  id={styles.btn}
-                  onClick={() => setModalOpen(true)}
-                  title="Замовити"
-                />
-              </div>
+          <div className={styles.innerWrap}>
+            <div className={styles.imgBox} onClick={() => setIndex(0)}>
+              <Image
+                src={areas.image}
+                alt="фото сайту"
+                fill={true}
+                priority={true}
+                className={styles.img}
+                sizes="(max-width: 768px) 100vw,  50vw"
+              />
             </div>
-            {/* <div className={styles.sliderBox}> */}
-              {/* <h2 className={styles.sliderTitle}>{data.sliderTitle}</h2> */}
-              {/* <CategorySlider images={data.sliderImages} /> */}
-            {/* </div> */}
+            <div className={styles.descriptionBox}>
+              <h2 className={styles.subTitle}>{areas.subTitle}</h2>
+              <div className={styles.description}>{areas.description}</div>
+
+              <OrderBtn
+                type="button"
+                id={styles.btn}
+                onClick={() => setModalOpen(true)}
+                title="Замовити"
+              />
+            </div>
           </div>
-          {/* <Slider index={index} setIndex={setIndex} array={srcArray} /> */}
-        </section>
+          {/* <div className={styles.sliderBox}> */}
+          {/* <h2 className={styles.sliderTitle}>{data.sliderTitle}</h2> */}
+          {/* <CategorySlider images={data.sliderImages} /> */}
+          {/* </div> */}
+        </div>
+        {/* <Slider index={index} setIndex={setIndex} array={srcArray} /> */}
+      </section>
     </>
   );
 };

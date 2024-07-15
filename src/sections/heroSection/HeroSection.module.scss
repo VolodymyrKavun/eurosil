@@ -19,9 +19,10 @@
   background-image: url("/images/HeroBg.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 4% 0%;
+  // background-position: 10% 0%;
+  background-position: center;
   padding-top: 20px;
-  padding-bottom: 118px;
+  padding-bottom: 200px;
   @media screen and (min-width: $tablet) {
     padding-top: 40px;
     padding-bottom: 224px;
@@ -29,7 +30,7 @@
   }
   @media screen and (min-width: $laptop) {
     padding-top: 32px;
-    padding-bottom: 136px;
+    padding-bottom: 170px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 72px;
@@ -38,7 +39,9 @@
 
   @media screen and (max-height: $tablet) and (orientation: landscape) {
     padding-top: 32px;
-    padding-bottom: 12vh;
+    padding-bottom: 20vh;
+    background-position: center;
+    background-position: bottom;
   }
 }
 
