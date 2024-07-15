@@ -5,9 +5,8 @@ import Link from "next/link";
 import React, { useContext } from "react";
 import styles from "./Logo.module.scss";
 
-
-const Logo = ( className ) => {
-  const { hash, setHash } = useContext(SiteContext);
+const Logo = (className) => {
+  const { setHash } = useContext(SiteContext);
 
   return (
     <>

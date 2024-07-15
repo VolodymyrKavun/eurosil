@@ -1,0 +1,32 @@
+@import "../../../app/variables";
+
+.linkBack {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: $secondary50;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $secondary10;
+  z-index: 1;
+  & svg {
+    width: 24px;
+    height: 24px;
+    fill: $secondary10;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    & svg {
+      width: 28px;
+    }
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 20px;
+    & svg {
+      width: 32px;
+    }
+  }
+}
