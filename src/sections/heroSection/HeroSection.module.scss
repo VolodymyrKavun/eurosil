@@ -3,6 +3,12 @@
 .section {
   height: 100vh;
 
+  background-image: linear-gradient(rgba(221, 221, 234, 0), #030305),
+    url("/images/HeroBg.webp"), linear-gradient(#030305, #030305);
+  background-repeat: no-repeat;
+  background-size: 100% 10%, auto 72%, cover;
+  background-position: bottom;
+
   padding-top: 70px;
   @media screen and (min-width: $tablet) {
     padding-top: 100px;
@@ -16,32 +22,22 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background-image: url("/images/HeroBg.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background-position: 10% 0%;
-  background-position: center;
-  padding-top: 20px;
-  padding-bottom: 200px;
+  padding-top: 28px;
+  padding-bottom: 25vh;
+
   @media screen and (min-width: $tablet) {
     padding-top: 40px;
-    padding-bottom: 224px;
     background-position: center;
   }
   @media screen and (min-width: $laptop) {
     padding-top: 32px;
-    padding-bottom: 170px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 72px;
-    padding-bottom: 132px;
   }
 
   @media screen and (max-height: $tablet) and (orientation: landscape) {
     padding-top: 32px;
-    padding-bottom: 20vh;
-    background-position: center;
-    background-position: bottom;
   }
 }
 
@@ -55,7 +51,8 @@
   width: 100%;
   font-size: 32px;
   color: $gray0;
-  font-weight: 300;
+  font-weight: 600;
+  text-shadow: 0px 0px 24px black;
   @media screen and (min-width: $tablet) {
     width: 614px;
     font-size: 60px;
@@ -66,7 +63,17 @@
   }
 }
 
-.btn {
+#btn {
   margin-left: auto;
   margin-right: auto;
+  max-width: 432px;
+
+  @media screen and (min-width: $laptop) {
+    width: 306px;
+    height: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 384px;
+  }
 }

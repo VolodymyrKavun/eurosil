@@ -1,13 +1,12 @@
 import Image from "next/image";
 import styles from "./AboutSection.module.scss";
-import Link from "next/link";
 import BtnLink from "@/components/buttons/BtnLink/BtnLink";
 
 const AboutSection = () => {
   return (
     <section className={styles.section} id="about">
       <div className={`container ${styles.container}`}>
-        <h2 className="sectionTitle">
+        <h2 className={`sectionTitle ${styles.sectionTitle}`}>
           <span>Про нас</span>
         </h2>
         <div className={styles.aboutWrapp}>
@@ -25,11 +24,10 @@ const AboutSection = () => {
               виробляється за інноваційною технологією із замкнутим циклом.
             </p>
             <p>
-              Eurosil А500 — високочистий нанодисперсний аморфний кремнезем,
-              отриманий шляхом фторидно-амонієвої переробки. Він поліпшує
-              сипучість, зменшує схильність порошків до спікання, перетворює
-              речовину на зручну для дозування, стабілізує в’язкість, підвищує
-              міцність та модифікує інші властивості виробів і речовин.
+              «Eurosil» є маркою компанії «ICM» — «Innovative Chemical Materials».
+            </p>
+            <p>
+              «ICM» — інноваційна компанія з виробництва спеціальних хімічних елементів.
             </p>
 
             <BtnLink href="/about" title="Детальніше" id={styles.btnLink} />

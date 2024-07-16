@@ -8,7 +8,6 @@ import Logo from "../Logo/Logo";
 import NavLinks from "../NavLinks/NavLinks";
 import styles from "./Header.module.scss";
 
-
 const Header = () => {
   const { isMobileMenu, setIsMobileMenu } = useContext(SiteContext);
   const { isMobile, isTablet, isDesktop } = useWindowResize();
@@ -69,13 +68,22 @@ const Header = () => {
     <header className={`${styles.header}`} ref={headerRef}>
       <div className={`container ${styles.container}`}>
         {!isDesktop && <BurgerBtn />}
+
+        <Logo className={`${styles.logo}`} />
+
         {(!isMobile || !isTablet) && (
           <a href="tel:+380636270773" className={`${styles.tell} hoverLink`}>
             +380-63-627-07-73
           </a>
         )}
 
-        <Logo className={`${styles.logo} hoverLink`} />
+        {(isMobile || isTablet) && (
+          <a href="tel:+380636270773">
+            <svg className={styles.phoneIcon}>
+              <use href="/sprite.svg#icon-phone"></use>
+            </svg>
+          </a>
+        )}
 
         <NavLinks
           className={navlinksStyles()}
