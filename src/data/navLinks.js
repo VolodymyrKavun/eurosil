@@ -12,7 +12,12 @@ export const navlinks = [
   },
   {
     id: v4(),
-    title: "Сфери використання",
+    title: "Продукція",
+    href: "/products",
+  },
+  {
+    id: v4(),
+    title: "Використання",
     href: "/catalogue",
   },
   {
