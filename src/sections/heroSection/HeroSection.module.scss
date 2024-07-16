@@ -2,9 +2,11 @@
 
 .section {
   height: 100vh;
-  background-image: url("/images/HeroBg.webp");
+
+  background-image: linear-gradient(rgba(221, 221, 234, 0), #030305),
+    url("/images/HeroBg.webp"), linear-gradient(#030305, #030305);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 10%, auto 72%, cover;
   background-position: bottom;
 
   padding-top: 70px;
@@ -20,7 +22,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  padding-top: 20px;
+  padding-top: 28px;
   padding-bottom: 25vh;
 
   @media screen and (min-width: $tablet) {

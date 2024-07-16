@@ -3,6 +3,7 @@ import "./globals.scss";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { SiteProvider } from "@/context/SiteContext";
+import ToTopBtn from "@/components/buttons/ToTopBtn/ToTopBtn";
 
 const manrope = Manrope({
   subsets: ["cyrillic"],
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
           <Header />
           <main>{children}</main>
           <Footer />
+          <ToTopBtn />
         </SiteProvider>
       </body>
     </html>
