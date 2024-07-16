@@ -1,17 +1,11 @@
 "use client";
 
 import Link from "next/link";
-// import { CldImage } from "next-cloudinary";
 import Image from 'next/image'
-// import { GetDataWithPathname } from "@/fetch/ClientFetch";
-
-
 import styles from "./CatalogueList.module.scss";
-// import Loader from "../Loader/Loader";
 import { areas } from "@/data/areas";
 
 const CatalogueList = () => {
-  // const { data, isLoading, error } = GetDataWithPathname();
   return (
     <>
         <ul className={styles.catalogueList}>
