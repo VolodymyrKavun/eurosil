@@ -3,6 +3,8 @@ export const products = [
         id: "eurosil-a200",
         title: "Eurosil A200",
         image: "/images/products/Eurosil-A200.webp",
+        subTitle: "Eurosil - це високоякісний діоксид кремнію",
+        description: "Питома поверхня, по методу БЕТ складає 218 м²/г. SiO2 Eurosil™ - безбарвна кристалічна речовина, що володіє високим рівнем твердості та міцності. Не реагує з водою та стійкий до дії кислот.",
         blocks: [
             {
                 blockImg: '/images/products/crystals.webp',
@@ -18,6 +20,8 @@ export const products = [
         id: "eurosil-a500",
         title: "Eurosil A500",
         image: "/images/products/Eurosil-A500.webp",
+        subTitle: "Eurosil - це високоякісний діоксид кремнію",
+        description: "Питома поверхня, по методу БЕТ складає 218 м²/г. SiO2 Eurosil™ - безбарвна кристалічна речовина, що володіє високим рівнем твердості та міцності. Не реагує з водою та стійкий до дії кислот.",
         blocks: [
             {
                 blockImg: '/images/products/crystals.webp',
@@ -33,6 +37,8 @@ export const products = [
         id: "eurosil-s500",
         title: "Eurosil S500",
         image: "/images/products/Eurosil-S500.webp",
+        subTitle: "Eurosil - це високоякісний діоксид кремнію",
+        description: "Питома поверхня, по методу БЕТ складає 218 м²/г. SiO2 Eurosil™ - безбарвна кристалічна речовина, що володіє високим рівнем твердості та міцності. Не реагує з водою та стійкий до дії кислот.",
         blocks: [
             {
                 blockImg: '/images/products/crystals.webp',

@@ -33,7 +33,21 @@
     }
 }
 
+.block:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $laptop) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 40px;
+    }
+}
+
 .blockImg {
+    width: 100%;
+    height: auto;
     object-fit: cover;
 
     @media screen and (min-width: $laptop) {
