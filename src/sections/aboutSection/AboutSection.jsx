@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./AboutSection.module.scss";
-import Link from "next/link";
 import BtnLink from "@/components/buttons/BtnLink/BtnLink";
 
 const AboutSection = () => {

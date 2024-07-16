@@ -10,7 +10,7 @@ const AboutPageSection = () => {
     <section className={`pageSection`}>
       <div className={`container ${styles.container}`}>
         <div className={`sectionTitleWpapp`}>
-          <LinkBack href="/" />
+          <LinkBack />
 
           <h1 className={`sectionTitle`}>
             <span>Про нас</span>

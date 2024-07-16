@@ -1,5 +1,3 @@
-// "use client";
-
 import BtnLink from "@/components/buttons/BtnLink/BtnLink";
 
 import styles from "./HeroSection.module.scss";
@@ -12,7 +10,7 @@ const HeroSection = () => {
           Діоксид кремнію європейської якості
         </h1>
 
-        <BtnLink href="#products" title="Замовити" id={styles.btn} />
+        <BtnLink href="/products" title="Замовити" id={styles.btn} />
       </div>
     </section>
   );
