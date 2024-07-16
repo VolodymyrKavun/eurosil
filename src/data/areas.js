@@ -30,7 +30,7 @@ export const areas = [
   {
     id: v4(),
     title: "Будівництво",
-    category: "сonstruction",
+    category: "construction",
     image: "/images/будівництво.webp",
     subTitle: "Важливість використання діоксиду кремнію в агрономії",
     description:
