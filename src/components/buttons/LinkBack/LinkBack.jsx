@@ -1,26 +1,19 @@
 "use client";
 
-import { SiteContext } from "@/context/SiteContext";
-import Link from "next/link";
-import React, { useContext } from "react";
+import { useRouter } from "next/navigation";
+import React from "react";
 import styles from "./LinkBack.module.scss";
 
-const LinkBack = ({ id, href }) => {
-  const { hash, setHash } = useContext(SiteContext);
+const LinkBack = ({ id }) => {
+  const router = useRouter();
+  console.log(router);
   return (
-    <Link
-      id={id}
-      href={href}
-      className={styles.linkBack}
-      onClick={() => {
-        setHash(el.href.slice(1));
-      }}
-    >
+    <button id={id} className={styles.linkBack} onClick={() => router.back()}>
       <svg>
         <use href="/sprite.svg#arrow-left"></use>
       </svg>
       Назад
-    </Link>
+    </button>
   );
 };
 

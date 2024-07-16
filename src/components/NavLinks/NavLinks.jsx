@@ -4,7 +4,7 @@ import { SiteContext } from "@/context/SiteContext";
 import { navlinks } from "@/data/navLinks";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { MouseEvent, useContext, useEffect } from "react"; // імпортуємо тип MouseEvent
+import React, { useContext, useEffect } from "react"; // імпортуємо тип MouseEvent
 import styles from "./NavLinks.module.scss";
 
 const NavLinks = ({ className, onClick }) => {
@@ -27,7 +27,6 @@ const NavLinks = ({ className, onClick }) => {
   return (
     <nav className={`${styles.nav} ${className}`}>
       {navlinks.map((el) => {
-
         const homeLinkClassName = () => {
           if (isClient && hash === el.href.slice(1)) {
             return `${styles.link}  activeLink`;

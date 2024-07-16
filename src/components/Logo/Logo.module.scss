@@ -3,13 +3,20 @@
 .logo {
   font-family: var(--font-notoSerif);
   font-size: 24px;
-  font-weight: 300;
-  // font-size: clamp(24px, 1.7vw, 36px);
+  font-weight: 400;
 
   @media screen and (min-width: $tablet) {
     font-size: 36px;
   }
   @media screen and (min-width: $laptop) {
-    font-size: 32px;
+    font-size: 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
+
+  &:hover,
+  &:focus {
+    @include textHover;
   }
 }
