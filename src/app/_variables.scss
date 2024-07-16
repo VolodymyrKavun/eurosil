@@ -55,6 +55,7 @@ $alertSuccess: #005c25;
 $linkColor: #0000ff;
 
 $boxShadow: -8px -8px 24px rgba(120, 94, 91, 0.2);
+$sectionGradient: linear-gradient(0deg, #094669 64%, #030305);
 
 @mixin textHover {
   text-shadow: 0px 0px 32px rgba(0, 0, 0);

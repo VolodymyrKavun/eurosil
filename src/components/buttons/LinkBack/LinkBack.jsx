@@ -6,7 +6,7 @@ import styles from "./LinkBack.module.scss";
 
 const LinkBack = ({ id }) => {
   const router = useRouter();
-  console.log(router);
+
   return (
     <button id={id} className={styles.linkBack} onClick={() => router.back()}>
       <svg>
