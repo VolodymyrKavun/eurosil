@@ -1,4 +1,4 @@
-import ProductsSection from "@/sections/productsSection/productsSection";
+import ProductsSection from "@/sections/productsSection/ProductsSection";
 
 
 const ProductsPage = () => {
