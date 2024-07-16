@@ -10,4 +10,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-family: var(--font-raleway);
+  font-weight: 300;
+  font-size: 16px;
+
+  &:focus,
+  &:hover {
+    scale: 0.98;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 20px;
+  }
 }

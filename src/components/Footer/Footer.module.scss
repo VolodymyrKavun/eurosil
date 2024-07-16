@@ -68,6 +68,11 @@
     fill: $gray0;
   }
 
+  &:hover,
+  &:focus {
+    @include textHover;
+  }
+
   @media screen and (min-width: $laptop) {
     font-size: 20px;
   }

@@ -14,4 +14,9 @@
   @media screen and (min-width: $desktop) {
     font-size: 36px;
   }
+
+  &:hover,
+  &:focus {
+    @include textHover;
+  }
 }
