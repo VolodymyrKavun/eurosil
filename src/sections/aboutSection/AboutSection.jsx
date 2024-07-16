@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <section className={styles.section} id="about">
       <div className={`container ${styles.container}`}>
-        <h2 className="sectionTitle">
+        <h2 className={`sectionTitle ${styles.sectionTitle}`}>
           <span>Про нас</span>
         </h2>
         <div className={styles.aboutWrapp}>

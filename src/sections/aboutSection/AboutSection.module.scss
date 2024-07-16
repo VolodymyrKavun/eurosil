@@ -3,6 +3,9 @@
 .section {
   padding-top: 16px;
   padding-bottom: 16px;
+
+  background-image: linear-gradient(0deg, #094669 64%, #030305);
+
   @media screen and (min-width: $tablet) {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -27,6 +30,10 @@
   @media screen and (min-width: $laptop) {
     gap: 24px;
   }
+}
+
+.sectionTitle span {
+  background-color: transparent;
 }
 
 .aboutWrapp {
@@ -60,7 +67,6 @@
 
   & img {
     object-fit: cover;
-    scale: 1.15;
   }
 }
 .aboutDescr {
