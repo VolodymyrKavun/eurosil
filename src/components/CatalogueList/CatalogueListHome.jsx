@@ -1,17 +1,12 @@
 "use client";
 
 import Link from "next/link";
-// import { CldImage } from "next-cloudinary";
 import Image from 'next/image'
-
-// import { GetDataWithPathname } from "@/fetch/ClientFetch";
 
 import styles from "./CatalogueList.module.scss";
 import { areas } from "@/data/areas";
 
 const CatalogueListHome = () => {
-  // const { data, isLoading, error } = GetDataWithPathname();
-  // console.log("dataCataloguesListHome", data);
   return (
     <ul className={styles.catalogueList}>
       {areas
@@ -20,7 +15,7 @@ const CatalogueListHome = () => {
               item.category === "medicine" ||
               item.category === "cosmetology" ||
               item.category === "agricultural" ||
-              item.category === "сonstruction"
+              item.category === "construction"
           )
           .map(({ title, category, image }) => (
             <li key={title} className={styles.catalogueItem}>
