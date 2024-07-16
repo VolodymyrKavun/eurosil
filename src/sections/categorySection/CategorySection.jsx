@@ -1,13 +1,12 @@
 "use client";
 
-import Link from "next/link";
-
 import styles from "./CategorySection.module.scss";
-import OrderBtn from "@/components/buttons/OrderBtn/OrderBtn";
 import Image from "next/image";
 import { areas } from "@/data/areas";
 import { getProductByCategory } from "@/utils/getProductByCategory";
 import { usePathname } from "next/navigation";
+import { aboutUs } from "@/data/aboutUs";
+import LinkBack from "@/components/buttons/LinkBack/LinkBack";
 
 const CategorySection = () => {
   const pathName = usePathname();
@@ -15,41 +14,46 @@ const CategorySection = () => {
 
   return (
     <>
-        <section className={styles.section}>
-          <div className={`container ${styles.container} `}>
-            <Link href="/catalogue" className={styles.linkBack}>
-              <svg className={styles.icon}>
-                <use href="/sprite.svg#arrow-left"></use>
-              </svg>
-              Назад
-            </Link>
-            <h1 className={styles.title}>
-              <span>{data?.title}</span>
-            </h1>
+        <section className={`pageSection`}>
+          <div className={`container ${styles.container}`}>
+            <div className={`sectionTitleWpapp`}>
+              <LinkBack />
 
-            <div className={styles.innerWrap}>
-              <div className={styles.imgBox} onClick={() => setIndex(0)}>
+              <h1 className={`sectionTitle`}>
+                <span>{data?.title}</span>
+              </h1>
+            </div>
+              <figure className={styles.figure + ' ' + styles.mainBlock} onClick={() => setIndex(0)}>
                 <Image
                   src={data?.image}
                   alt="фото сайту"
                   fill={true}
                   priority={true}
-                  className={styles.img}
                   sizes="(max-width: 768px) 100vw,  50vw"
                 />
-              </div>
+              </figure>
               <div className={styles.descriptionBox}>
                 <h2 className={styles.subTitle}>{data?.subTitle}</h2>
-                <div className={styles.description}>{data?.description}</div>
-
-                <OrderBtn
-                  type="button"
-                  id={styles.btn}
-                  onClick={() => setModalOpen(true)}
-                  title="Замовити"
-                />
+                <p className={styles.description}>{data?.description}</p>
+                <ul>
+                  {data?.categoryItem?.map((el) => (
+                    <li key={el.id} className={styles.item}>
+                      <figure className={styles.figure}>
+                        <Image
+                          src={el.itemImg}
+                          fill
+                          sizes="(max-width: 767px) 90vw, (max-width: 1440px) 60vw, 33vw"
+                          alt={el.title}
+                        />
+                      </figure>
+                      <div className={styles.contentWrapp}>
+                        <h2 className={styles.itemTitle}>{el.itemTitle}</h2>
+                        <p className={styles.text}>{el.itemDescr}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </div>
           </div>
         </section>
     </>
