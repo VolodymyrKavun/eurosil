@@ -6,7 +6,7 @@ import React, { useContext } from "react";
 import styles from "./LinkBack.module.scss";
 
 const LinkBack = ({ id, href }) => {
-  const { hash, setHash } = useContext(SiteContext);
+  const { setHash } = useContext(SiteContext);
   return (
     <Link
       id={id}

@@ -45,16 +45,19 @@
 .logo {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 8px;
+  transform: translate(-50%, 0%);
+}
 
-  &:focus,
-  &:hover {
-    scale: 1.1;
-    transform: translate(-46%, -50%);
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
-    background-position: right;
+.phoneIcon {
+  width: 24px;
+  height: 24px;
+  fill: $gray0;
+  @media screen and (min-width: $tablet) {
+    width: 34px;
+    height: 34px;
+  }
+  @media screen and (min-width: $laptop) {
+    display: none;
   }
 }
 
@@ -97,8 +100,8 @@
     width: fit-content;
     height: fit-content;
 
-    font-size: 20px;
-    gap: 12px;
+    font-size: 16px;
+    gap: 0px;
   }
 }
 
