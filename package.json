@@ -2,6 +2,7 @@
   "name": "eurosil",
   "version": "0.1.0",
   "private": true,
+  "figma": "https://www.figma.com/design/J1T9lzzYug4oQA78UCFZ1K/Eurosil-design?node-id=0-1&t=de8yo2niNOIh5KNb-0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
