@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section className={styles.section} id="about">
       <div className={`container ${styles.container}`}>
-        <h2 className={`sectionTitle ${styles.sectionTitle}`}>
+        <h2 className={`sectionTitle `}>
           <span>Про нас</span>
         </h2>
         <div className={styles.aboutWrapp}>
@@ -24,10 +24,12 @@ const AboutSection = () => {
               виробляється за інноваційною технологією із замкнутим циклом.
             </p>
             <p>
-              «Eurosil» є маркою компанії «ICM» — «Innovative Chemical Materials».
+              «Eurosil» є маркою компанії «ICM» — «Innovative Chemical
+              Materials».
             </p>
             <p>
-              «ICM» — інноваційна компанія з виробництва спеціальних хімічних елементів.
+              «ICM» — інноваційна компанія з виробництва спеціальних хімічних
+              елементів.
             </p>
 
             <BtnLink href="/about" title="Детальніше" id={styles.btnLink} />
