@@ -16,13 +16,14 @@ const ProductIdInformation = ({ data }) => {
             </div>
 
             <Image
+                className={styles.mainImg}
                 src={data?.image}
                 width={280}
-                height={280}
+                height={152}
                 alt='Eurosil-A200'
             />
-            <h2>{data?.subTitle}</h2>
-            <p>{data?.description}</p>
+            <h2 className={styles.subTitle}>{data?.subTitle}</h2>
+            <p className={styles.text}>{data?.description}</p>
             <ul className={styles.blocksWrapper}>
                 {data?.blocks.map((item, index) => <li key={index} className={styles.block}>
                     <Image
@@ -32,7 +33,7 @@ const ProductIdInformation = ({ data }) => {
                         height={280}
                         alt='Eurosil-A200'
                     />
-                    <p className={styles.blockText}>{item.blockText}</p>
+                    <p className={`${styles.text} ${styles.blockText}`}>{item.blockText}</p>
                 </li>)}
             </ul>
 
