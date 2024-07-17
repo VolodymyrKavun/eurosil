@@ -23,6 +23,6 @@ export const navlinks = [
   {
     id: v4(),
     title: "Контакти",
-    href: "/#contacts",
+    href: "#contacts",
   },
 ];

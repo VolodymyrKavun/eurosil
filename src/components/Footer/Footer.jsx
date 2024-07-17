@@ -4,7 +4,7 @@ import Logo from "../Logo/Logo";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contacts">
       <div className={`container ${styles.container}`}>
         <address className={styles.contactsWrapp}>
           <a href="tel:+380973988008" className={`${styles.contact} `}>
