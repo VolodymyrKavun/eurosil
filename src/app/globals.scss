@@ -122,13 +122,16 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 16px 20px;
 
-  // height: 50vh;
   @media screen and (min-width: $tablet) {
-    padding-left: 56px;
-    padding-right: 56px;
+    padding: 20px 56px;
+  }
+  @media screen and (min-width: $laptop) {
+    padding: 32px 56px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 40px 56px;
   }
 }
 
