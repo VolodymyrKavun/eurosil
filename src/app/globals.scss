@@ -19,6 +19,11 @@
   transition-duration: 250ms;
 }
 
+*::before,
+*::after {
+  display: inline-block;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -225,12 +230,13 @@ button {
 
 .sectionTitle {
   width: 100%;
-  text-align: center;
   font-weight: 400;
   font-size: 28px;
   color: $gray0;
-  position: relative;
   margin-bottom: 16px;
+
+  display: flex;
+  align-items: center;
 
   @media screen and (min-width: $tablet) {
     font-size: 48px;
@@ -241,18 +247,17 @@ button {
   }
 
   & span {
-    background: $secondary50;
-    padding: 0 12px;
+    margin: 0 12px;
   }
 
-  &::before {
+  &:before,
+  &::after {
     content: "";
-    height: 1px;
     width: 100%;
+    height: 1px;
     background-color: $gray0;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    z-index: -1;
+
+    z-index: auto;
+    flex: 1;
   }
 }
