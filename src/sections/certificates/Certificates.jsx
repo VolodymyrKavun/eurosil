@@ -28,6 +28,7 @@ const Certificates = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.pdfImgWrapp}
+              prefetch={false}
             >
               <Image
                 src="/images/certificates/conclusion.webp"
@@ -42,6 +43,7 @@ const Certificates = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.pdfImgWrapp}
+              prefetch={false}
             >
               <Image
                 src="/images/certificates/certificate.webp"
