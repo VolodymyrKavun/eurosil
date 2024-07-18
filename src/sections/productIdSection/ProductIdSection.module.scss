@@ -77,11 +77,9 @@
   }
 }
 
-// .productsList {
-//   @media screen and (min-width: $tablet) {
-//     flex-direction: row;
-//   }
-// }
+.productsList .item {
+  width: 50%;
+}
 
 .allProduceBtn {
   @media screen and (min-width: $tablet) {

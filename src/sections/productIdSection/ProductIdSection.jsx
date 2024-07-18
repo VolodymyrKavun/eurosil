@@ -2,11 +2,11 @@
 import { usePathname } from "next/navigation";
 import ProductsList from "@/components/ProductsList/ProductsList";
 import ProductIdInformation from "@/components/ProductIdInformation/ProductIdInformation";
-import styles from "./ProductIdSection.module.scss";
+import FreeSamples from "@/components/FreeSamples/FreeSamples";
+import BtnLink from "@/components/buttons/BtnLink/BtnLink";
 import { products } from "@/data/products";
 import { getObjectFromArrayByProperty } from "@/utils/getObjectFromArrayByProperty";
-import LinkBack from "@/components/buttons/LinkBack/LinkBack";
-import BtnLink from "@/components/buttons/BtnLink/BtnLink";
+import styles from "./ProductIdSection.module.scss";
 
 
 const ProductIdSection = () => {
@@ -20,8 +20,8 @@ const ProductIdSection = () => {
                 <ProductIdInformation data={data} />
                 <h3 className={styles.produceTitle}>Інша продукція</h3>
                 <ProductsList data={filteredProducts}
-                // className={styles.productsList}
                 />
+                <FreeSamples />
                 <BtnLink
                     title="Вся продукція"
                     href="/products"
