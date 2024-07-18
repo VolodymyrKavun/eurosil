@@ -2,11 +2,14 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import LinkBack from "@/components/buttons/LinkBack/LinkBack";
-import OrderBtn from "@/components/buttons/OrderBtn/OrderBtn";
 import { areas } from "@/data/areas";
-import { aboutUs } from "@/data/aboutUs";
 import { getObjectFromArrayByProperty } from "@/utils/getObjectFromArrayByProperty";
 import styles from "./CategorySection.module.scss";
+import ProductsList from "@/components/ProductsList/ProductsList";
+import FreeSamples from "@/components/FreeSamples/FreeSamples";
+import BtnLink from "@/components/buttons/BtnLink/BtnLink";
+import { products } from "@/data/products";
+
 
 
 const CategorySection = () => {
@@ -38,13 +41,13 @@ const CategorySection = () => {
           <p className={styles.description}>{data?.description}</p>
           <ul>
             {data?.categoryItem?.map((el) => (
-              <li key={el.id} className={styles.item}>
+              <li key={el.itemTitle} className={styles.item}>
                 <figure className={styles.figure}>
                   <Image
                     src={el.itemImg}
                     fill
                     sizes="(max-width: 767px) 90vw, (max-width: 1440px) 60vw, 33vw"
-                    alt={el.title}
+                    alt={el.itemTitle}
                   />
                 </figure>
                 <div className={styles.contentWrapp}>
@@ -55,6 +58,15 @@ const CategorySection = () => {
             ))}
           </ul>
         </div>
+        <h3 className={styles.produceTitle}>Продукція</h3>
+        <ProductsList data={products}
+        />
+        <FreeSamples />
+        <BtnLink
+          title="Вся продукція"
+          href="/products"
+          id={styles.allProduceBtn}
+        />
       </div>
     </section >
   );

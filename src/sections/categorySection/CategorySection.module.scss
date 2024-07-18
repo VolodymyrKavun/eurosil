@@ -30,6 +30,7 @@
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+
   @media screen and (min-width: $tablet) {
     flex-direction: row-reverse;
     gap: 20px;
@@ -38,12 +39,15 @@
       flex-direction: row;
     }
   }
+
   @media screen and (min-width: $laptop) {
     gap: 24px;
+
     &:not(:last-child) {
       margin-bottom: 24px;
     }
   }
+
   @media screen and (min-width: $desktop) {
     &:not(:last-child) {
       margin-bottom: 64px;
@@ -64,55 +68,63 @@
   @media screen and (min-width: 425px) {
     aspect-ratio: 2/1;
   }
+
   @media screen and (min-width: $tablet) {
     aspect-ratio: 7/4;
     flex: 1;
   }
+
   @media screen and (min-width: $laptop) {
     flex: 1.4;
   }
 }
 
-.mainBlock{
+.mainBlock {
   margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: $laptop) {
     margin-bottom: 24px;
   }
+
   @media screen and (min-width: $desktop) {
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
-.subTitle{
-    text-align: center;
-    margin-bottom: 16px;
+.subTitle {
+  text-align: center;
+  margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: $laptop) {
     margin-bottom: 24px;
   }
+
   @media screen and (min-width: $desktop) {
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
-.description{
-      margin-bottom: 16px;
+.description {
+  margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: $laptop) {
     margin-bottom: 24px;
   }
+
   @media screen and (min-width: $desktop) {
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -128,6 +140,7 @@
 
 .itemTitle {
   font-size: 20px;
+
   @media screen and (min-width: $laptop) {
     font-size: 32px;
   }
@@ -135,6 +148,7 @@
 
 .text {
   font-size: 16px;
+
   @media screen and (min-width: $laptop) {
     font-size: 20px;
   }
@@ -142,7 +156,44 @@
 
 #link {
   margin-top: auto;
+
   @media screen and (min-width: $laptop) {
     height: 48px;
+  }
+}
+
+.produceTitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 42px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 62px;
+  }
+}
+
+#allProduceBtn {
+  @media screen and (min-width: $tablet) {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    ;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: 432px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 500px;
   }
 }
