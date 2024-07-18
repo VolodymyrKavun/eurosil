@@ -20,7 +20,8 @@ const ProductIdInformation = ({ data }) => {
                 src={data?.image}
                 width={280}
                 height={152}
-                alt='Eurosil-A200'
+                sizes="100vw"
+                alt={data?.title}
             />
             <h2 className={styles.subTitle}>{data?.subTitle}</h2>
             <p className={styles.text}>{data?.description}</p>
@@ -31,7 +32,8 @@ const ProductIdInformation = ({ data }) => {
                         src={item.blockImg}
                         width={280}
                         height={280}
-                        alt='Eurosil-A200'
+                        sizes="(max-width: 767px) 100vw, (max-width: 1439px) 50vw, 700px"
+                        alt={data?.title}
                     />
                     <p className={`${styles.text} ${styles.blockText}`}>{item.blockText}</p>
                 </li>)}
