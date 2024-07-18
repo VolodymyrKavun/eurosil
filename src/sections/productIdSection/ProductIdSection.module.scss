@@ -1,56 +1,98 @@
 @import "../../app/variables";
 
-.section {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 70px;
-  min-height: 100vh;
+// .section {
+//   padding-left: 0;
+//   padding-right: 0;
+//   padding-top: 70px;
+//   min-height: 100vh;
 
-  @media screen and (min-width: $tablet) {
-    padding-top: 100px;
-  }
-}
+//   @media screen and (min-width: $tablet) {
+//     padding-top: 100px;
+//   }
+// }
 
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 20px;
   background-color: $secondary50;
-  padding: 16px;
 
   @media screen and (min-width: $tablet) {
-    padding: 20px;
+    row-gap: 24px;
   }
 
   @media screen and (min-width: $laptop) {
-    padding: 40px;
+    row-gap: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    row-gap: 40px;
   }
 }
 
-.title {
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid $gray0;
-  line-height: 0.1em;
-  margin: 16px 0 50px;
+// .title {
+//   width: 100%;
+//   text-align: center;
+//   border-bottom: 1px solid $gray0;
+//   line-height: 0.1em;
+//   margin: 16px 0 50px;
 
+//   font-weight: 400;
+//   font-size: 28px;
+//   color: $gray0;
+
+//   @media screen and (min-width: $tablet) {
+//     font-size: 48px;
+//     margin: 20px 0 70px;
+//   }
+
+//   @media screen and (min-width: $laptop) {
+//     font-size: 62px;
+//     margin: 25px 0 75px;
+//   }
+// }
+
+// .title span {
+//   background: $secondary50;
+//   padding: 0 10px;
+// }
+
+.produceTitle {
   font-weight: 400;
   font-size: 28px;
-  color: $gray0;
+  line-height: 1.1;
 
   @media screen and (min-width: $tablet) {
-    font-size: 48px;
-    margin: 20px 0 70px;
+    font-size: 32px;
   }
 
   @media screen and (min-width: $laptop) {
+    font-size: 42px;
+  }
+
+  @media screen and (min-width: $desktop) {
     font-size: 62px;
-    margin: 25px 0 75px;
   }
 }
 
-.title span {
-  background: $secondary50;
-  padding: 0 10px;
+// .productsList {
+//   @media screen and (min-width: $tablet) {
+//     flex-direction: row;
+//   }
+// }
+
+.allProduceBtn {
+  @media screen and (min-width: $tablet) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: 432px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 500px;
+  }
 }
