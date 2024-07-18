@@ -1,0 +1,83 @@
+@import "../../app/variables";
+
+.container {
+  flex-direction: column;
+  & h2 {
+    margin-bottom: 40px;
+  }
+}
+
+.contentWrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: $tablet) {
+    gap: 40px;
+  }
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.certifList {
+  width: 100%;
+  @media screen and (min-width: $laptop) {
+    flex: 1;
+  }
+}
+
+.certificate {
+  display: flex;
+  gap: 12px;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.imgWrapp {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.title {
+  flex: 1;
+  font-size: clamp(12px, 3vw, 28px);
+  @media screen and (min-width: $laptop) {
+    font-size: clamp(16px, 3vw, 20px);
+  }
+}
+
+.certifListPdf {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: 520px) {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (min-width: $laptop) {
+    height: calc(300px - 1vw);
+    max-height: 340px;
+    justify-content: flex-end;
+  }
+}
+
+.pdfImgWrapp {
+  width: 100%;
+  aspect-ratio: 600/900;
+  position: relative;
+
+  & img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @media screen and (min-width: $laptop) {
+    height: 100%;
+    width: auto;
+  }
+}
