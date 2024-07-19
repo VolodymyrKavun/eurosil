@@ -8,10 +8,10 @@ import Certificates from "@/sections/certificates/Certificates";
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection />
       <AboutSection />
       <BenefitsSection />
-      <HomeCataloguesSection />
+      <HomeCataloguesSection /> */}
       <Certificates />
     </>
   );

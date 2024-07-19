@@ -2,9 +2,7 @@
 
 .container {
   flex-direction: column;
-  & h2 {
-    margin-bottom: 40px;
-  }
+  gap: 20px;
 }
 
 .contentWrapp {
@@ -36,7 +34,7 @@
   }
 }
 
-.imgWrapp {
+.iconWrapp {
   position: relative;
   width: 32px;
   height: 32px;
@@ -44,6 +42,7 @@
 .title {
   flex: 1;
   font-size: clamp(12px, 3vw, 28px);
+  font-weight: 400;
   @media screen and (min-width: $laptop) {
     font-size: clamp(16px, 3vw, 20px);
   }
@@ -52,22 +51,51 @@
 .certifListPdf {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 20px;
+  height: calc(100% + 40px);
+  padding: 20px;
   @media screen and (min-width: 520px) {
     flex-direction: row;
-    gap: 40px;
-    justify-content: space-between;
-    align-items: center;
+    aspect-ratio: 3/2;
+    // flex: 0.5;
   }
   @media screen and (min-width: $laptop) {
-    height: calc(300px - 1vw);
-    max-height: 340px;
-    justify-content: flex-end;
+    flex: 0.5;
   }
 }
 
-.pdfImgWrapp {
-  width: 100%;
+.imgBackdrop {
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-in;
+
+  &:first-child {
+    margin-right: auto;
+  }
+  &:last-child {
+    margin-left: auto;
+  }
+}
+.fullScreenBackdr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  padding: 40px;
+
+  margin: 0;
+  background-color: rgba(19, 19, 19, 0.5);
+  cursor: zoom-out;
+}
+
+.imgWrapp {
+  height: 100%;
   aspect-ratio: 600/900;
   position: relative;
 
@@ -81,3 +109,9 @@
     width: auto;
   }
 }
+// .imgWrappinBackdrop {
+//   height: 80%;
+//   // margin-left: auto;
+//   // margin-right: auto;
+//   margin: auto;
+// }

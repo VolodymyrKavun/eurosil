@@ -3,7 +3,7 @@ import { v4 } from "uuid";
 export const certificates = [
   {
     id: v4(),
-    title: "Інститутом хімії поверхні ім. О.О.Чуйка НАН Україний",
+    title: "Інститутом хімії поверхні ім. О.О. Чуйка НАН України",
     img: "/images/certificates/certif-1.png",
   },
   {
@@ -23,7 +23,7 @@ export const certificates = [
   },
   {
     id: v4(),
-    title: "Інститутом медецини праці ім. Ю.І. Кундієва НАМН України",
+    title: "Інститутом медицини праці ім. Ю.І. Кундієва НАМН України",
     img: "/images/certificates/certif-5.png",
   },
 ];
