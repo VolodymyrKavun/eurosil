@@ -1,39 +1,27 @@
 @import "../../app/variables";
 
 .container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-
-    @media screen and (min-width: $tablet) {
-        row-gap: 24px;
-    }
-
-    @media screen and (min-width: $laptop) {
-        row-gap: 32px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        row-gap: 40px;
-    }
+  display: flex;
+  flex-direction: column;
+  row-gap: $mobileGap;
 }
 
 .text {
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.4;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 24px;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        font-size: 32px;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 32px;
+  }
 }
 
 .link {
-    color: $secondary10;
-    text-decoration: underline;
+  color: $secondary10;
+  text-decoration: underline;
 }

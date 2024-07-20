@@ -23,13 +23,7 @@
 .container {
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  @media screen and (min-width: $tablet) {
-    gap: 16px;
-  }
-  @media screen and (min-width: $laptop) {
-    gap: 24px;
-  }
+  gap: $mobileGap;
 }
 
 .aboutWrapp {
@@ -38,11 +32,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 12px;
+  gap: $mobileGap;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
-    gap: clamp(16px, 2.5vw, 48px);
   }
 }
 
@@ -95,7 +88,7 @@
   background-color: $secondary300;
   color: $gray0;
   border: 2px solid $secondary10;
-  margin-top: 12px;
+  margin-top: $mobileGap;
 
   @media screen and (min-width: $laptop) {
     font-size: 20px;

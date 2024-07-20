@@ -141,16 +141,15 @@ section {
   padding-bottom: 32px;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 140px;
+    padding-top: 120px;
   }
 
   @media screen and (min-width: $laptop) {
-    padding-top: 112px;
+    padding-top: 100px;
     padding-bottom: 72px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 120px;
     padding-bottom: 64px;
   }
 }

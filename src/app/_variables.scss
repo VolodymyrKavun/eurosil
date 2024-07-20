@@ -47,7 +47,7 @@ $secondary200: #bfadb0;
 $secondary100: #d9cecf;
 $secondary50: #094669;
 $secondary10: #fef187;
-$borderColor: #36CAEB;
+$borderColor: #36caeb;
 
 $alertError: #8a0000;
 $alertWarning: #ffc83a;
@@ -57,6 +57,7 @@ $linkColor: #0000ff;
 
 $boxShadow: -8px -8px 24px rgba(120, 94, 91, 0.2);
 $sectionGradient: linear-gradient(0deg, #094669 64%, #030305);
+$mobileGap: 32px;
 
 @mixin textHover {
   text-shadow: 0px 0px 32px rgba(0, 0, 0);
