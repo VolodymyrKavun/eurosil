@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { SiteProvider } from "@/context/SiteContext";
 import ToTopBtn from "@/components/buttons/ToTopBtn/ToTopBtn";
+import Modal from "@/components/Modal/Modal";
 
 const manrope = Manrope({
   subsets: ["cyrillic"],
@@ -34,15 +35,14 @@ export default function RootLayout({ children }) {
       lang="uk"
       className={`${manrope.variable} ${notoSerif.variable} ${inter.variable}`} // any Warnings 😃
     >
-      <body
-        // className={`${manrope.variable} ${notoSerif.variable} ${inter.variable}`} // Warning: Extra attributes from the server: data-new-gr-c-s-check-loaded,data-gr-ext-installed
-        style={{ overflowX: "hidden", overflowY: "auto" }}
-      >
+      <body style={{ overflowX: "hidden", overflowY: "auto" }}>
         <SiteProvider>
           <Header />
           <main>{children}</main>
+
           <Footer />
           <ToTopBtn />
+          <Modal />
         </SiteProvider>
       </body>
     </html>
