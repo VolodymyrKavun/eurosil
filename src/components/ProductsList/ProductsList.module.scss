@@ -5,114 +5,15 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    gap: 12px;
 
     @media screen and (min-width: $tablet) {
-        row-gap: 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     @media screen and (min-width: $laptop) {
-        row-gap: 32px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        row-gap: 40px;
-    }
-}
-
-.item {
-    width: 100%;
-    padding: 12px 20px;
-    border: solid 0.69px #FFFFFF33;
-    border-radius: 16px;
-    box-shadow: 1.38px 0.69px 1.32px 0px $borderColor;
-
-    @media screen and (min-width: $tablet) {
-        padding: 32px;
-    }
-
-    @media screen and (min-width: $laptop) {
-        padding: 44px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        padding: 62px;
-    }
-}
-
-.img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 32px;
-    }
-
-    @media screen and (min-width: $laptop) {
-        margin-bottom: 40px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 60px;
-    }
-}
-
-.contentWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title {
-    color: $secondary10;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.3;
-
-    @media screen and (min-width: $tablet) {
-        font-size: 32px;
-    }
-
-    @media screen and (min-width: $laptop) {
-        font-size: 44px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        font-size: 62px;
-    }
-}
-
-.moreBtn {
-    width: 98px;
-    height: auto;
-    padding: 8px 16px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-
-    @media screen and (min-width: $tablet) {
-        width: 234px;
-        padding: 16px 40px;
-        border-radius: 40px;
-        border: 3.32px solid $secondary10;
-        font-size: 26px;
-        line-height: 1.3;
-    }
-
-    @media screen and (min-width: $laptop) {
-        width: 313px;
-        padding: 20px 52px;
-        border-radius: 53px;
-        border: 4.42px solid $secondary10;
-        font-size: 36px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        width: 440px;
-        padding: 32px 72px;
-        border-radius: 75px;
-        border: 6.22px solid $secondary10;
-        font-size: 50px;
+        gap: 24px;
     }
 }
