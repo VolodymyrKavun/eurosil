@@ -32,9 +32,5 @@ const ProductIdSection = () => {
     );
 };
 
+
 export default ProductIdSection;
-
-
-
-
-

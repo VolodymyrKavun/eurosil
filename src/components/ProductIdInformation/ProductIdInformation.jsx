@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import styles from './ProductIdInformation.module.scss'
 import LinkBack from '../buttons/LinkBack/LinkBack'
+import styles from './ProductIdInformation.module.scss'
 
 
 const ProductIdInformation = ({ data }) => {
@@ -9,7 +9,7 @@ const ProductIdInformation = ({ data }) => {
     return (
         <div className={styles.wrapper}>
             <div className={`sectionTitleWpapp`}>
-                <LinkBack href="/products" />
+                <LinkBack />
                 <h1 className={`sectionTitle`}>
                     <span>{data?.title}</span>
                 </h1>
@@ -42,5 +42,6 @@ const ProductIdInformation = ({ data }) => {
         </div>
     )
 }
+
 
 export default ProductIdInformation

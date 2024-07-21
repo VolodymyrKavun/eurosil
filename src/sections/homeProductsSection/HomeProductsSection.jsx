@@ -11,7 +11,9 @@ const HomeProductsSection = () => {
     return (
         <section>
             <div className={`container ${styles.container}`}>
-                <h1 className={styles.produceTitle}>Продукція</h1>
+                <h2 className='sectionTitle'>
+                    <span>Продукція</span>
+                </h2>
                 <ProductsList data={products}
                 />
                 <FreeSamples />

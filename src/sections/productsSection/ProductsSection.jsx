@@ -11,7 +11,7 @@ const ProductsSection = () => {
         <section className="pageSection">
             <div className={`container ${styles.container}`} >
                 <div className={`sectionTitleWpapp`}>
-                    <LinkBack href="/" />
+                    <LinkBack />
                     <h1 className={`sectionTitle`}>
                         <span>Продукція</span>
                     </h1>
@@ -22,7 +22,7 @@ const ProductsSection = () => {
                 />
                 <p className={styles.text}>Числовий індекс у назві марки позначає питому поверхню продукту. Для різних ринків і сфер застосування є свій «Eurosil» з оптимальним поєднанням властивостей. Специфікації марок <Link
                     className={styles.link}
-                    href="/public/documentation/brand-specification.pdf"
+                    href="/documentation/brand-specification.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                 >детально
