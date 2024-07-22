@@ -10,12 +10,9 @@ import FreeSamples from "@/components/FreeSamples/FreeSamples";
 import BtnLink from "@/components/buttons/BtnLink/BtnLink";
 import { products } from "@/data/products";
 
-
-
 const CategorySection = () => {
   const pathhame = usePathname();
   const data = getObjectFromArrayByProperty(areas, "category", pathhame, 11);
-
 
   return (
     <section className={`pageSection`}>
@@ -27,7 +24,10 @@ const CategorySection = () => {
             <span>{data?.title}</span>
           </h1>
         </div>
-        <figure className={styles.figure + ' ' + styles.mainBlock} onClick={() => setIndex(0)}>
+        <figure
+          className={styles.figure + " " + styles.mainBlock}
+          onClick={() => setIndex(0)}
+        >
           <Image
             src={data?.image}
             alt="фото сайту"
@@ -58,9 +58,8 @@ const CategorySection = () => {
             ))}
           </ul>
         </div>
-        <h3 className={styles.produceTitle}>Продукція</h3>
-        <ProductsList data={products}
-        />
+        <h3 className={`sectionTitle`}>Продукція</h3>
+        <ProductsList data={products} />
         <FreeSamples />
         <BtnLink
           title="Вся продукція"
@@ -68,7 +67,7 @@ const CategorySection = () => {
           id={styles.allProduceBtn}
         />
       </div>
-    </section >
+    </section>
   );
 };
 

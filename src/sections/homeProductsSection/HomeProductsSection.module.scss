@@ -1,23 +1,23 @@
 @import "../../app/variables";
 
 .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: $mobileGap;
 }
 
 .allProduceBtn {
-    @media screen and (min-width: $tablet) {
-        width: 350px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 350px;
+  }
 
-    @media screen and (min-width: $laptop) {
-        width: 432px;
-    }
+  @media screen and (min-width: $laptop) {
+    width: 432px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: 500px;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 500px;
+  }
 }
