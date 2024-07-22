@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 
   & li {
     display: flex;
@@ -24,24 +24,20 @@
 
   @media screen and (min-width: $tablet) {
     justify-content: space-between;
-    gap: 16px;
+    row-gap: clamp(16px, 3vw, 44px);
     & li {
-      width: calc(50% - 8px);
+      width: $tabletItemWidth;
       height: 388px;
     }
   }
 
   @media screen and (min-width: $laptop) {
-    gap: 20px;
     & li {
-      width: calc(50% - 10px);
       height: 470px;
     }
   }
   @media screen and (min-width: $desktop) {
-    gap: 24px;
     & li {
-      width: calc(50% - 22px);
       height: 588px;
     }
   }

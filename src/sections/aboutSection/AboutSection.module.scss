@@ -36,6 +36,7 @@
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
+    gap: $itemInnerWidth;
   }
 }
 
