@@ -8,7 +8,7 @@ const HomeProductsSection = () => {
   return (
     <section>
       <div className={`container ${styles.container}`}>
-        <h2 className={`sectionTitle ${styles.produceTitle}`}>
+        <h2 className="sectionTitle">
           <span>Продукція</span>
         </h2>
         <ProductsList data={products} />
