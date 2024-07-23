@@ -218,14 +218,18 @@ button {
 
 .sectionTitleWpapp {
   width: 100%;
+  & button {
+    margin-bottom: 4px;
+  }
 
   @media screen and (min-width: $tablet) {
     position: relative;
 
     & button {
       position: absolute;
-      top: 25%;
+      top: 27%;
       padding-right: 12px;
+      margin-bottom: 0;
     }
   }
 }

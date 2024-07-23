@@ -9,6 +9,20 @@
   gap: $mobileGap;
 }
 
+.sectionTitleWpapp {
+  & button {
+    position: static;
+  }
+
+  @media screen and (min-width: 850px) {
+    position: relative;
+    & button {
+      position: absolute;
+      margin-bottom: 0;
+    }
+  }
+}
+
 .title {
   width: 100%;
   text-align: center;
