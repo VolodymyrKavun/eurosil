@@ -18,6 +18,9 @@ const ProductIdSection = () => {
         <section className='pageSection'>
             <div className={`container ${styles.container}`}>
                 <ProductIdInformation data={data} />
+                <BtnLink title="Замовити"
+                    href="tel:+380636270773"
+                    className={styles.btnCall} />
                 <h3 className={styles.produceTitle}>Інша продукція</h3>
                 <ProductsList data={filteredProducts}
                 />
