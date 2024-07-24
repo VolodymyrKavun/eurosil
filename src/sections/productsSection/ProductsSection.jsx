@@ -3,6 +3,7 @@ import LinkBack from "@/components/buttons/LinkBack/LinkBack"
 import ProductsList from "@/components/ProductsList/ProductsList"
 import { products } from "@/data/products"
 import styles from './ProductsSection.module.scss'
+import Certificates from "../certificates/Certificates"
 
 
 const ProductsSection = () => {
@@ -29,6 +30,7 @@ const ProductsSection = () => {
                 </Link>.
                 </p>
             </div>
+            <Certificates />
         </section>
     )
 }
