@@ -36,6 +36,7 @@ const BurgerBtn = () => {
       onClick={() => {
         setIsMobileMenu(!isMobileMenu);
       }}
+      aria-label="Мобільне меню"
     >
       {isMobileMenu ? (
         <svg>

@@ -72,7 +72,7 @@ const Header = () => {
         <Logo className={`${styles.logo}`} />
 
         {(!isMobile || !isTablet) && (
-          <a href="tel:+380636270773" className={`${styles.tell} hoverLink`}>
+          <a href="tel:+380636270773" className={`${styles.tell} hoverLink`} aria-label="Зробити замовлення">
             +380-63-627-07-73
           </a>
         )}
