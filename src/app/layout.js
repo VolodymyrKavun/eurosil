@@ -3,9 +3,9 @@ import "./globals.scss";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { SiteProvider } from "@/context/SiteContext";
-// import ToTopBtn from "@/components/buttons/ToTopBtn/ToTopBtn";
+import ToTopBtn from "@/components/buttons/ToTopBtn/ToTopBtn";
 import Modal from "@/components/Modal/Modal";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
 const manrope = Manrope({
   subsets: ["cyrillic"],
@@ -25,9 +25,9 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const DynamicToTopBtn = dynamic(() =>
-  import("@/components/Buttons/ToTopBtn/ToTopBtn")
-);
+// const DynamicToTopBtn = dynamic(() =>
+//   import("@/components/Buttons/ToTopBtn/ToTopBtn")
+// );
 
 export const metadata = {
   title: "Діоксид кремнію європейської якості | Eurosil",
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
           <Header />
           <main>{children}</main>
           <Footer />
-          <DynamicToTopBtn />
+          <ToTopBtn />
           <Modal />
         </SiteProvider>
       </body>
