@@ -78,7 +78,7 @@ const Header = () => {
         )}
 
         {(isMobile || isTablet) && (
-          <a href="tel:+380636270773">
+          <a href="tel:+380636270773" aria-label="Мобільний телефон">
             <svg className={styles.phoneIcon}>
               <use href="/sprite.svg#icon-phone"></use>
             </svg>

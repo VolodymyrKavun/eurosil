@@ -34,7 +34,7 @@ const ToTopBtn = () => {
       <Image
         src="/images/arrow-up.svg"
         fill
-        alt="Picture of the author"
+        alt="Кнопка до гори"
         sizes="10vw"
       />
     </button>

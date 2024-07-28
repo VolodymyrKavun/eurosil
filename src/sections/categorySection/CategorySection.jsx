@@ -30,7 +30,7 @@ const CategorySection = () => {
         >
           <Image
             src={data?.image}
-            alt="фото сайту"
+            alt={data?.alt}
             fill={true}
             priority={true}
             sizes="(max-width: 768px) 100vw,  50vw"

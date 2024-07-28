@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={styles.footer} id="contacts">
       <div className={`container ${styles.container}`}>
         <address className={styles.contactsWrapp}>
-          <a href="tel:+380973988008" className={`${styles.contact} `}>
+          <a href="tel:+380636270773" className={`${styles.contact} `}>
             <svg>
               <use href="./sprite.svg#icon-phonemini"></use>
             </svg>

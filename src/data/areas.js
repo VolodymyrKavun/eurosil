@@ -3,6 +3,7 @@ export const areas = [
   {
     id: v4(),
     title: "Медицина",
+    alt: "Використання діоксиду кремнію в медицині",
     category: "medicine",
     image: "/images/medicine.webp",
     subTitle: "Важливість використання діоксиду кремнію в медицині",
@@ -26,6 +27,7 @@ export const areas = [
   {
     id: v4(),
     title: "Косметологія",
+    alt: "Використання діоксиду кремнію в косметології",
     category: "cosmetology",
     image: "/images/cosmetology.webp",
     subTitle: "Важливість використання діоксиду кремнію в косметології",
@@ -49,6 +51,7 @@ export const areas = [
   {
     id: v4(),
     title: "Агропродукція",
+    alt: "Використання діоксиду кремнію в агрономії",
     category: "agricultural",
     image: "/images/agricultural_products.webp",
     subTitle: "Важливість використання діоксиду кремнію в агрономії",
@@ -72,6 +75,7 @@ export const areas = [
   {
     id: v4(),
     title: "Будівництво",
+    alt: "Використання діоксиду кремнію в будівництві",
     category: "construction",
     image: "/images/construction.webp",
     subTitle: "Важливість використання діоксиду кремнію в будівництві",
@@ -95,6 +99,7 @@ export const areas = [
   {
     id: v4(),
     title: "Виробництво пива",
+    alt: "Використання діоксиду кремнію у виробництві пива",
     category: "beer-production",
     image: "/images/beer_production.webp",
     subTitle: "Важливість використання діоксиду кремнію у виробництві пива",
@@ -118,6 +123,7 @@ export const areas = [
   {
     id: v4(),
     title: "Скла та кераміки",
+    alt: "Використання діоксиду кремнію у виробництві скла та кераміки",
     category: "glass-and-ceramics",
     image: "/images/ceramics_production.webp",
     subTitle:
@@ -142,6 +148,7 @@ export const areas = [
   {
     id: v4(),
     title: "Побутової хімії",
+    alt: "Використання діоксиду кремнію у виробництві побутової хімії",
     category: "household-chemicals",
     image: "/images/household_chemicals.webp",
     subTitle:
@@ -166,6 +173,7 @@ export const areas = [
   {
     id: v4(),
     title: "Лаків і фарб",
+    alt: "Використання діоксиду кремнію у виробництві лаків і фарб",
     category: "varnishes-and-paints",
     image: "/images/varnishes_and_paints.webp",
     subTitle:
@@ -190,6 +198,7 @@ export const areas = [
   {
     id: v4(),
     title: "Тваринництво",
+    alt: "Використання діоксиду кремнію в тваринництві",
     category: "animal-husbandry",
     image: "/images/animal_husbandry.webp",
     subTitle: "Важливість використання діоксиду кремнію в тваринництві",
@@ -213,6 +222,7 @@ export const areas = [
   {
     id: v4(),
     title: "Гумових виробів",
+    alt: "Використання діоксиду кремнію у виробництві гумових виробів",
     category: "rubber-products",
     image: "/images/production_rubber_products.webp",
     subTitle:
@@ -237,6 +247,7 @@ export const areas = [
   {
     id: v4(),
     title: "Виноробство",
+    alt: "Використання діоксиду кремнію у виноробстві",
     category: "winemaking",
     image: "/images/winemaking.webp",
     subTitle: "Важливість використання діоксиду кремнію у виноробстві",

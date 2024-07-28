@@ -17,7 +17,7 @@ const CatalogueListHome = () => {
             item.category === "agricultural" ||
             item.category === "construction"
         )
-        .map(({ title, category, image }) => (
+        .map(({ title, category, image, alt }) => (
           <li key={title} className={styles.catalogueItem}>
             <Link
               href={`/catalogue/${category}`}
@@ -26,7 +26,7 @@ const CatalogueListHome = () => {
               <div className={styles.imgBox}>
                 <Image
                   src={image}
-                  alt="фото сайту"
+                  alt={alt}
                   fill={true}
                   priority={true}
                   className={styles.img}
