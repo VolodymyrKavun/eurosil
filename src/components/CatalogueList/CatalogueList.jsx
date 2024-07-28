@@ -10,7 +10,7 @@ const CatalogueList = () => {
     <>
         <ul className={styles.catalogueList}>
           {
-            areas?.map(({ title, category, image }) => (
+            areas?.map(({ title, category, image, alt }) => (
               <li key={title}>
                 <Link
                   href={`/catalogue/${category}`}
@@ -19,7 +19,7 @@ const CatalogueList = () => {
                   <div className={styles.imgBox}>
                     <Image
                       src={image}
-                      alt="фото сайту"
+                      alt={alt}
                       fill={true}
                       priority={true}
                       className={styles.img}

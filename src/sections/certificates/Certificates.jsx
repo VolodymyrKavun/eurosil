@@ -16,7 +16,7 @@ const Certificates = () => {
             {certificates.map((el) => (
               <li key={el.id} className={styles.certificate}>
                 <figure className={styles.iconWrapp}>
-                  <Image src={el.img} alt={el.title} fill sizes="16vw" />
+                  <Image src={el.img} alt={el.alt} fill sizes="16vw" />
                 </figure>
                 <h3 className={styles.title}>{el.title}</h3>
               </li>
